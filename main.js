@@ -4,6 +4,12 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
+
+
+
+
+
+
 //zmienne
 const canvas = document.querySelector('.canvas')
 const gearbox = document.querySelector('.gearbox')
@@ -35,15 +41,15 @@ const cubeFunction = () => {
   cube.position.set(0, 0, 7)
   
 }
-//funkcja przekładni
-const gearboxFunction = () => {
-  loader.load('../assets/scene.gltf', function(gltff) {
-    obj = gltff.scene
-    obj.rotation.set(0, 0, 0)
-    obj.position.set(0, 0, 0)
-    scene.add(obj)
-  })
-}
+// //funkcja przekładni
+// const gearboxFunction = () => {
+//   loader.load('../assets/scene.gltf', function(gltff) {
+//     obj = gltff.scene
+//     obj.rotation.set(0, 0, 0)
+//     obj.position.set(0, 0, 0)
+//     scene.add(obj)
+//   })
+// }
 
 
 
@@ -100,7 +106,7 @@ function animate () {
  animate()
 
 
- gearbox.addEventListener('click', gearboxFunction);
+//  gearbox.addEventListener('click', gearboxFunction);
 
 cuboid.addEventListener('click',resetFunction)
 
