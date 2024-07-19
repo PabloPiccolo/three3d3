@@ -42,14 +42,14 @@ const cubeFunction = () => {
   
 }
 // //funkcja przekładni
-// const gearboxFunction = () => {
-//   loader.load('../assets/scene.gltf', function(gltff) {
-//     obj = gltff.scene
-//     obj.rotation.set(0, 0, 0)
-//     obj.position.set(0, 0, 0)
-//     scene.add(obj)
-//   })
-// }
+const gearboxFunction = () => {
+  loader.load('../assets/scene.gltf', function(gltff) {
+    obj = gltff.scene
+    obj.rotation.set(0, 0, 0)
+    obj.position.set(0, 0, 0)
+    scene.add(obj)
+  })
+}
 
 
 
@@ -106,7 +106,7 @@ function animate () {
  animate()
 
 
-//  gearbox.addEventListener('click', gearboxFunction);
+  gearbox.addEventListener('click', gearboxFunction);
 
 cuboid.addEventListener('click',resetFunction)
 
