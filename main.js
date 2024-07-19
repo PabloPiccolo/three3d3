@@ -33,7 +33,7 @@ canvas.appendChild(renderer.domElement)
 
 //kostka
 const cubeFunction = () => {
-  const uvTexture = new THREE.TextureLoader().load('../assets/jpgpng.png')
+  const uvTexture = new THREE.TextureLoader().load('./assets/jpgpng.png')
   const geometry = new THREE.BoxGeometry(5, 3, 3);
   const material = new THREE.MeshStandardMaterial({ map: uvTexture })
   const cube = new THREE.Mesh(geometry, material);
@@ -43,7 +43,7 @@ const cubeFunction = () => {
 }
 // //funkcja przekładni
 const gearboxFunction = () => {
-  loader.load('../assets/scene.gltf', function(gltff) {
+  loader.load('./assets/scene.gltf', function(gltff) {
     obj = gltff.scene
     obj.rotation.set(0, 0, 0)
     obj.position.set(0, 0, 0)
@@ -59,7 +59,7 @@ const resetFunction =() =>{
 }
 
 const textureMaterial = new THREE.TextureLoader()
-const baseColor = textureMaterial.load('../assets/tlo.jpg')
+const baseColor = textureMaterial.load('./assets/tlo.jpg')
 scene.background = baseColor;
 
 
