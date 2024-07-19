@@ -45,10 +45,7 @@ const gearboxFunction = () => {
   })
 }
 
-const resetFunction2 = ()=>{
-gearboxFunction();
-scene.remove(cube);
-}
+
 
 const resetFunction =() =>{
  scene.remove(obj);
@@ -103,7 +100,7 @@ function animate () {
  animate()
 
 
-gearbox.addEventListener('click', resetFunction2)
+ gearbox.addEventListener('click', gearboxFunction);
 
 cuboid.addEventListener('click',resetFunction)
 
